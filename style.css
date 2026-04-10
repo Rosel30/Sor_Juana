@@ -1,0 +1,336 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap');
+
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+/* BODY */
+
+body{
+
+font-family: "Maven Pro", sans-serif;
+background:#f8f9fc;
+color:#1f2a44;
+line-height:1.9;
+text-align: justify;
+
+}
+
+
+/* NAVBAR */
+
+.navbar{
+
+position:sticky;
+top:0;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 60px;
+
+background:#0f1c3f;
+color:white;
+
+z-index:999;
+
+}
+
+
+.logo{
+
+font-family: "Maven Pro", sans-serif;
+font-weight: bold;
+font-size:22px;
+
+}
+
+
+.navbar ul{
+
+list-style:none;
+display:flex;
+
+}
+
+
+.navbar li{
+
+margin-left:30px;
+
+}
+
+
+.navbar a{
+
+text-decoration:none;
+color:white;
+font-weight:400;
+
+transition:.3s;
+
+}
+
+
+.navbar a:hover{
+
+color:#f2c94c;
+
+}
+
+
+/* HERO SECTION */
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(15,28,63,.75),rgba(15,28,63,.75)),
+
+url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Sor_Juana_In%C3%A9s_de_la_Cruz_%28Miguel_Cabrera%29.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+
+}
+
+
+.hero-text h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:64px;
+
+}
+
+
+.hero-text h2{
+
+font-size:42px;
+margin-bottom:15px;
+
+color:#f2c94c;
+
+}
+
+
+.hero-text p{
+
+font-size:20px;
+
+}
+
+
+/* CONTENT BLOCK */
+
+.content{
+
+width:60%;
+margin:auto;
+
+padding:90px 0;
+
+font-size:19px;
+
+}
+
+
+/* CHAPTER SECTIONS */
+
+.chapter{
+
+padding:120px 18%;
+
+background:white;
+
+}
+
+
+.chapter.dark{
+
+background:#0f1c3f;
+color:white;
+
+}
+
+
+.chapter h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:42px;
+
+margin-bottom:35px;
+
+}
+
+
+.chapter p{
+
+margin-bottom:20px;
+
+font-size:18px;
+
+}
+
+
+/* PORTRAIT IMAGES */
+
+.portrait{
+
+display:block;
+
+width:320px;
+
+margin:40px auto;
+
+border-radius:12px;
+
+box-shadow:0px 8px 25px rgba(0,0,0,.15);
+
+}
+
+
+/* QUOTE STYLE */
+
+.quote{
+
+font-family:'Playfair Display',serif;
+
+font-size:26px;
+
+text-align:center;
+
+color:#f2c94c;
+
+margin:30px 0;
+
+}
+
+
+/* VIDEO EMBED */
+
+.video{
+
+position:relative;
+
+padding-bottom:56.25%;
+
+height:0;
+
+margin:40px 0;
+
+}
+
+
+.video iframe{
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+}
+
+
+/* REFLECTION BOX */
+
+.reflection{
+
+background:#eef1ff;
+
+padding:40px;
+
+border-left:8px solid #f2c94c;
+
+margin-top:40px;
+
+border-radius:8px;
+
+}
+
+
+/* WORKS LIST */
+
+.chapter ul{
+
+padding-left:20px;
+
+}
+
+
+.chapter li{
+
+margin-bottom:12px;
+
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:900px){
+
+.navbar{
+
+flex-direction:column;
+
+}
+
+
+.navbar ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+margin-top:10px;
+
+}
+
+
+.hero-text h1{
+
+font-size:40px;
+
+}
+
+
+.hero-text h2{
+
+font-size:28px;
+
+}
+
+
+.content{
+
+width:85%;
+
+}
+
+
+.chapter{
+
+padding:90px 8%;
+
+}
+
+
+}
